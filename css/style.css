@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: 'hiromisake';
+    src: url('/css/fonts/HIROMISAKE.ttf');
+}
+
+.video-wrapper {
+ 
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* étend la vidéo à tout l'écran en maintenant ses proportions */
+    z-index: -1; /* passe la vidéo en arrière plan pour laisser apparaître le texte */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+.overlay h1 {
+    font-family: 'hiromisake';
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 5px 5px 5px black;
+  }
+
+.slide-rotate-effect {
+    overflow: hidden;
+    height: 70px;
+}
+
+.slide-subtitle {
+    font-family: 'hiromisake';
+    font-size: 4rem;
+    text-shadow: 5px 5px 5px black;
+}
+
+.slide-subtitle {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    animation: slide-subtitle 20s linear infinite;
+    animation-delay: 1s;             /* ⏸️ Wait 2s before animation starts */
+    animation-fill-mode: both;       /* ✅ Keep initial position before animating */
+}
+
+@keyframes slide-subtitle {
+    0%, 10% {
+        top: 0;
+        opacity: 1;
+    }
+
+    10%, 15% {
+        top: -68px;
+        opacity: 1;
+    }
+    15%, 25% {
+        top: -68px;
+        opacity: 1;
+    }
+
+    25%, 30% {
+        top: -136px;
+        opacity: 1;
+    }
+    30%, 40% {
+        top: -136px;
+        opacity: 1;
+    }
+
+    40%, 45% {
+        top: -204px;
+        opacity: 1;
+    }
+    45%, 55% {
+        top: -204px;
+        opacity: 1;
+    }
+
+    55%, 60% {
+        top: -272px;
+        opacity: 1;
+    }
+    60%, 70% {
+        top: -272px;
+        opacity: 1;
+    }
+
+    70%, 75% {
+        top: -340px;
+        opacity: 1;
+    }
+    75%, 85% {
+        top: -340px;
+        opacity: 1;
+    }
+
+    85%, 90% {
+        top: -408px;
+        opacity: 1;
+    }
+
+    90%, 100% {
+        top: -408px;
+        opacity: 1;
+    }
+}
+
