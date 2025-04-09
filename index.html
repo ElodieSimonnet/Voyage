@@ -12,43 +12,6 @@
 </head>
 <body>
 
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
  <!-- 
   <div class="video-wrapper">
     <video autoplay muted loop>
@@ -68,77 +31,27 @@
     </div>
   </div>
   
-   
-  
-  <div class="img-container1">
-    <img src="img/kimono.jpg" alt="image de femme en kimono">
-    <div class="img-overlay">
-        <h1>Terre de contrastes</h1>
-        <div class="subtitle">
-            <div class="culture">Culture</div>
-        </div>
-    </div>
-  </div>
-  <div class="img-container2">
-    <img src="img/sushi.jpg" alt="image de sushi">
-    <div class="img-overlay">
-        <h1>Terre de contrastes</h1>
-        <div class="subtitle">
-            <div class="gastronomie">Gastronomie</div>
-        </div>
-    </div>
-  </div>
-  <div class="img-container3">
-    <img src="img/fuji.jpg" alt="image du mont fuji">
-    <div class="img-overlay">
-        <h1>Terre de contrastes</h1>
-        <div class="subtitle">
-            <div class="aventure">Aventure</div>
-        </div>
-    </div>
-  </div>
-  <div class="img-container4">
-    <img src="img/singe.jpg" alt="image de singe des neiges">
-    <div class="img-overlay">
-        <h1>Terre de contrastes</h1>
-        <div class="subtitle">
-            <div class="biodiversite">Biodiversité</div>
-        </div>
-    </div>
-  </div>
-  <div class="img-container5">
-    <img src="img/ceremonie.jpg" alt="image de cérémonie du thé">
-    <div class="img-overlay">
-        <h1>Terre de contrastes</h1>
-        <div class="subtitle">
-            <div class="traditions">Traditions</div>
-        </div>
-    </div>
-  </div>
-  <div class="img-container6">
-    <img src="img/mariokart.jpg" alt="image de kart Mario roulant sur Shibuya crossing">
-    <div class="img-overlay">
-        <h1>Terre de contrastes</h1>
-        <div class="subtitle">
-            <div class="insolite">Insolite</div>
-        </div>
-    </div>
-  </div>
-  
-  -->
-  
+--> 
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="img/paysage.jpg" alt="image de paysage japonais">
-        <div class="img-overlay">
+        <video class="video-slide" autoplay muted loop playsinline>
+          <source src="video/Japon.mp4" type="video/mp4"/>
+        </video>     
+        <div class="overlay">
             <h1>Terre de contrastes</h1>
-            <div class="subtitle">
-                <div class="japon"></div>
+            <div class="slide-rotate-effect">
+              <div class="slide-subtitle">Culture</div>
+              <div class="slide-subtitle">Gastronomie</div>
+              <div class="slide-subtitle">Aventure</div>
+              <div class="slide-subtitle">Biodiversité</div>
+              <div class="slide-subtitle">Traditions</div>
+              <div class="slide-subtitle">Insolite</div>
+              <div class="slide-subtitle">Culture</div>
             </div>
-        </div>
-      </div>
+        </div>  
+      </div>    
       <div class="swiper-slide">
         <img src="img/kimono.jpeg" alt="image de femme en kimono">
         <div class="img-overlay">
@@ -215,6 +128,6 @@
     });
   </script>
   
-  
+ 
 </body>
 </html>

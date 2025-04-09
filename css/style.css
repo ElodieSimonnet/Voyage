@@ -1,14 +1,27 @@
+/** CSS Relatifs à la fonts **/
 
 @font-face {
     font-family: 'hiromisake';
-    src: url('/css/fonts/HIROMISAKE.ttf');
+    src: url('fonts/HIROMISAKE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.video-wrapper {
- 
+
+/** CSS Globaux à toute la page **/
+
+html, body {
+  /** position: relative; TO REMOVE IF NOTHING BAD HAPPEN FOR A WHILE.**/
+  height: 100%;
 }
 
-video {
+body {
+  margin: 0;
+}
+
+
+    
+    video {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,7 +41,7 @@ video {
   }
 
 .overlay h1 {
-    font-family: 'hiromisake';
+    font-family: hiromisake;
     font-size: 5rem;
     margin-bottom: 1rem;
     text-shadow: 5px 5px 5px black;
@@ -43,9 +56,6 @@ video {
     font-family: 'hiromisake';
     font-size: 4rem;
     text-shadow: 5px 5px 5px black;
-}
-
-.slide-subtitle {
     position: relative;
     box-sizing: border-box;
     text-align: center;
@@ -116,32 +126,68 @@ video {
     }
 }
 
-.swiper-container {
-    width: 600px;
-    height: 300px;
-}
-
-.swiper-slide {
-    position: relative;
-    width: 100%;
-}
-
 .img-overlay {
     position: absolute;
     width: 100%;
 }
 
-.mySwiper .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    margin: 50px 0 !important;
-    background-color: black; 
+.img-overlay > h1 {
+    font-family: 'hiromisake';
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 5px 5px 5px black;
+    color: #fff;
+}
+
+.subtitle {
+    font-family: 'hiromisake';
+    font-size: 4rem;
+    text-shadow: 5px 5px 5px black;
+    color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 
+
+/** CSS Swiper **/
+
+.swiper {
+    /**Sert à définir l'espacement entre les pagination-bullet**/
+    --swiper-pagination-bullet-vertical-gap: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+/** Slides de Swiper **/
+
+div.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.swiper-slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/** Swiper Navigation **/
 
 .swiper-pagination {
     width: 100px;
     height: 100px;
 }
 
+span.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
