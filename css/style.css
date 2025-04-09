@@ -116,3 +116,32 @@ video {
     }
 }
 
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-slide {
+    position: relative;
+    width: 100%;
+}
+
+.img-overlay {
+    position: absolute;
+    width: 100%;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 50px 0 !important;
+    background-color: black; 
+}
+
+
+
+.swiper-pagination {
+    width: 100px;
+    height: 100px;
+}
+
