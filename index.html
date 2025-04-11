@@ -79,13 +79,31 @@
         </div>  
       </div>    
       <div class="swiper-slide">
-        <img src="img/kimono.jpeg" alt="image de femme en kimono">
+        <img src="img/kimono2.jpg" alt="image de femme en kimono">
         <div class="img-overlay">
             <h1>Terre de contrastes</h1>
             <div class="subtitle">
                 <div class="culture">Culture</div>
             </div>
             <button class="btn">Découvrir</button>
+          
+            <div class="pulse-circle">
+              <div class="circle-deco"></div>
+              <div class="inner-circle">
+                <span class="circle-text">Mon texte</span>
+              </div>
+            </div>
+            <script>
+              // Sélectionner l'élément avec la classe 'pulse-circle'
+              const pulseCircle = document.querySelector('.pulse-circle');
+            
+              // Ajouter un événement 'click' pour gérer le clic
+              pulseCircle.addEventListener('click', function() {
+                // Ajouter/supprimer la classe 'clicked' pour faire grossir les cercles
+                this.classList.toggle('clicked');
+              });
+            </script>           
+            
         </div>
       </div>
       <div class="swiper-slide">
