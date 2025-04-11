@@ -211,11 +211,69 @@
             </div>
         </div>
       </div>
-      
-    
-    </div>
+      <!-- Slide verticale avec slider horizontal à l'intérieur -->
+      <div class="swiper-slide">
+        <div class="horizontal-slider-container">
+          <h2 class="slider-title">Terre de contrastes</h2>
+          <!-- Swiper horizontal -->
+          <div class="swiper myHorizontalSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-frame">
+                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                </div>
+              </div>
+            </div>
+            <!-- Flèches de navigation du slider horizontal-->
+            <div class="horizontal-button-prev"></div>
+            <div class="horizontal-button-next"></div>
+          </div>
+          <h3 class="slider-subtitle">Des paysages à couper le souffle</h3>
+        </div>
+      </div>
       <div class="swiper-pagination"></div>
-  </div>
+
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -301,6 +359,29 @@
     circleBtn12.addEventListener('click', function() {
       this.classList.toggle('clicked');
     });
-  </script>      
+  </script>
+  
+  <script>
+    const myHorizontalSwiper = new Swiper('.myHorizontalSwiper', {
+      slidesPerView: '4',
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.horizontal-button-next',
+        prevEl: '.horizontal-button-prev',
+  },
+});
+  </script>
+
+  <script>
+    document.querySelectorAll('.slide-video').forEach(video => {
+      video.addEventListener('mouseenter', () => {
+        video.play();
+      });
+      video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
+  </script>
 </body>
 </html>
