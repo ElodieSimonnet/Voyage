@@ -156,7 +156,7 @@ header {
 .overlay h1 {
     font-family: hiromisake;
     font-size: 5rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     text-shadow: 5px 5px 5px black;
   }
 
@@ -337,12 +337,72 @@ div.swiper-slide {
       border-radius: 50%;
       animation: pulse 3s infinite ease-in-out;
       box-shadow: 0 0 0 rgb(255, 255, 255);
-      position: relative; /* Nécessaire pour décaler avec 'left' */
-      left: 200px; /* Déplace vers la droite */
+      position: relative; /* Nécessaire pour décaler avec 'left' */ 
       cursor: pointer;
       transition: transform 0.3s ease;
       overflow: visible; /* Empêche le texte de dépasser */
     }
+
+    #circle-btn-1 {
+      left: 1500px; /* Déplace vers la droite */
+      bottom: 270px;
+    }
+
+    #circle-btn-2 {
+      left: 350px;
+      top: 60px;
+    }
+
+    #circle-btn-3 {
+      left: 350px;
+      bottom: 270px;
+    }
+
+    #circle-btn-4 {
+      left: 1500px;
+      top: 60px;
+    }
+
+    #circle-btn-5 {
+      left: 1500px;
+      bottom: 270px;
+    }
+
+    #circle-btn-6 {
+      left: 350px;
+      top: 60px;
+    }
+
+    #circle-btn-7 {
+      left: 350px;
+      bottom: 270px;
+    }
+
+    #circle-btn-8 {
+      left: 1500px;
+      top: 60px;
+    }
+
+    #circle-btn-9 {
+      left: 1500px;
+      bottom: 270px;
+    }
+
+    #circle-btn-10 {
+      left: 350px;
+      top: 60px;
+    }
+
+    #circle-btn-11 {
+      left: 350px;
+      bottom: 270px;
+    }
+
+    #circle-btn-12 {
+      left: 1500px;
+      top: 60px;
+    }
+
 .circle-deco {
       position: absolute;
       width: 50px;
