@@ -634,3 +634,9 @@ span.swiper-pagination-bullet {
 span.swiper-pagination-bullet:hover {
     transform: scale(1.8); /* Zoom au survol */
   }
+
+/** CSS spécifiques pour la gestion des vidéos dans le slider horizontal. **/
+
+.myHorizontalSwiper > .swiper-wrapper > .swiper-slide {
+    pointer-events: auto !important;
+}

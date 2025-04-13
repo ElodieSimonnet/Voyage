@@ -219,50 +219,68 @@
           <div class="swiper myHorizontalSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                <div id="slide-hokkaido" class="slide-frame">
+                    <video id="video-hokkaido" muted loop playsinline preload="auto" class="slide-video">
+                        <source src="video/Hokkaido.mp4" type="video/mp4">
+                    </video>
                 </div>
               </div>
+                <div class="swiper-slide">
+                    <div id="slide-tohoku" class="slide-frame">
+                        <video id="video-tohoku" muted loop playsinline preload="auto" class="slide-video">
+                            <source src="video/Tohoku.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
               <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
-                </div>
+                  <div id="slide-kanto" class="slide-frame">
+                      <video id="video-kanto" muted loop playsinline preload="auto" class="slide-video">
+                          <source src="video/Kanto.mp4" type="video/mp4">
+                      </video>
+                  </div>
               </div>
+                <div class="swiper-slide">
+                    <div id="slide-kyushu" class="slide-frame">
+                        <video id="video-kyushu" muted loop playsinline preload="auto" class="slide-video">
+                            <source src="video/Kyushu.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
               <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
-                </div>
+                  <div id="slide-kansai" class="slide-frame">
+                      <video id="video-kansai" muted loop playsinline preload="auto" class="slide-video">
+                          <source src="video/Kansai.mp4" type="video/mp4">
+                      </video>
+                  </div>
               </div>
-              <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                <div class="swiper-slide">
+                    <div id="slide-shugoku" class="slide-frame">
+                        <video id="video-shugoku" muted loop playsinline preload="auto" class="slide-video">
+                            <source src="video/shugoku.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                <div class="swiper-slide">
+                    <div id="slide-shikoku" class="slide-frame">
+                        <video id="video-shikoku" muted loop playsinline preload="auto" class="slide-video">
+                            <source src="video/Shikoku.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                <div class="swiper-slide">
+                    <div id="slide-chubu" class="slide-frame">
+                        <video id="video-chubu" muted loop playsinline preload="auto" class="slide-video">
+                            <source src="video/Chubu.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
+                <div class="swiper-slide">
+                    <div id="slide-okinawa" class="slide-frame">
+                        <video id="video-okinawa" muted loop playsinline preload="auto" class="slide-video">
+                            <source src="video/Okinawa.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-frame">
-                  <video muted loop playsinline preload="none" class="slide-video" src="video/Japon.mp4"></video>
-                </div>
-              </div>
             </div>
             <!-- Flèches de navigation du slider horizontal-->
             <div class="horizontal-button-prev"></div>
@@ -272,6 +290,7 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
+      <script src="js/video-slider.js"></script>
 
 
   <!-- Swiper JS -->
