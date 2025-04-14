@@ -344,62 +344,62 @@ div.swiper-slide {
     }
 
     #circle-btn-1 {
-      left: 1500px; /* Déplace vers la droite */
+      left: 1570px; /* Déplace vers la droite */
       bottom: 270px;
     }
 
     #circle-btn-2 {
-      left: 350px;
+      left: 300px;
       top: 60px;
     }
 
     #circle-btn-3 {
-      left: 350px;
+      left: 300px;
       bottom: 270px;
     }
 
     #circle-btn-4 {
-      left: 1500px;
+      left: 1570px;
       top: 60px;
     }
 
     #circle-btn-5 {
-      left: 1500px;
+      left: 1570px;
       bottom: 270px;
     }
 
     #circle-btn-6 {
-      left: 350px;
+      left: 300px;
       top: 60px;
     }
 
     #circle-btn-7 {
-      left: 350px;
+      left: 300px;
       bottom: 270px;
     }
 
     #circle-btn-8 {
-      left: 1500px;
+      left: 1570px;
       top: 60px;
     }
 
     #circle-btn-9 {
-      left: 1500px;
+      left: 1570px;
       bottom: 270px;
     }
 
     #circle-btn-10 {
-      left: 350px;
+      left: 300px;
       top: 60px;
     }
 
     #circle-btn-11 {
-      left: 350px;
+      left: 300px;
       bottom: 270px;
     }
 
     #circle-btn-12 {
-      left: 1500px;
+      left: 1570px;
       top: 60px;
     }
 
@@ -638,5 +638,5 @@ span.swiper-pagination-bullet:hover {
 /** CSS spécifiques pour la gestion des vidéos dans le slider horizontal. **/
 
 .myHorizontalSwiper > .swiper-wrapper > .swiper-slide {
-    pointer-events: auto !important;
+    pointer-events: visible !important;
 }
