@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'hiromisake';
+    src: url('fonts/HIROMISAKE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebasneueregular';
+    src: url('fonts/BebasNeue-Regular.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-top {
+    position: relative;
+    height: 72vh;
+    width: 100%;
+    background-image: url('../img/montfuji.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.footer-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+.footer-top-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+  }
+
+.footer-top-content h1 {
+    font-size: 50px;
+    font-family: 'hiromisake';
+  }
+  
+.footer-top-content p {
+    font-size: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding-top: 20px;
+  }
+
+.footer-bottom {
+    background-color: #000;
+    height: 28vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 0;
+  }
+  
+  .footer-column h3 {
+    font-size: 25px;
+    font-family: 'hiromisake';
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    color: white;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 15px;
+    font-family: 'bebasneueregular';
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-column.logo img {
+    max-width: 250px;
+    margin-top: 30px;
+  }
+
+/* Conteneur pour aligner horizontalement */
+.social-buttons ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem; /* espace entre les boutons */
+    padding: 0;
+    margin: 100px 0;
+    list-style: none;
+    justify-content:flex-start;
+  }
+
+
+section a {
+    text-decoration-line: none;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 120px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    transform: rotate(-30deg) skewX(25deg) translate(0, 0);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 800;
+}   
+ 
+
+/** fait l'effet 3D sur le petit côté des rectangles **/
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background: whitesmoke;
+    transform: skewY(-45deg);
+    top: 10px;
+    left: -20px;
+}
+
+/** fait l'effet 3D sur le grand côté des rectangles **/
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: whitesmoke;
+    transform: skewX(-45deg);
+    bottom: -20px;
+    left: -10px;
+}
+
+.btn,
+.btn::before,
+.btn::after {
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: rotate(-30deg) skewX(25deg) translate(25px, -25px);
+    box-shadow: -40px 40px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.btn-facebook:hover {
+    background: #315dfb;
+}
+
+.btn-facebook:hover::before {
+    background: #1e3ca7;
+}
+
+.btn-facebook:hover::after {
+    background: #426bff;
+}
+
+.btn-instagram:hover {
+    background: #962fbf;
+}
+
+.btn-instagram:hover::before {
+    background: #771f9a;
+}
+
+.btn-instagram:hover::after {
+    background: #af39de;
+}
+
+.btn-youtube:hover {
+    background: #f00;
+}
+
+.btn-youtube:hover::before {
+    background: #ad0000;
+}
+
+.btn-youtube:hover::after {
+    background: #ff3535;
+}
