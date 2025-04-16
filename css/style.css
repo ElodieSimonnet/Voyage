@@ -615,7 +615,7 @@ div.swiper-slide {
     bottom: 0;
     left: 5%; /* Positionner au centre */
     width: 2px;
-    height: 50vh;
+    height: 53vh;
     background-color: #fff; /* Couleur du trait */
   }
 
@@ -631,6 +631,9 @@ span.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   transform: scale(1.6); /* Grossit le bullet */
   opacity: 1;
+  width: 40px;
+  height: 40px;
+  background-color: transparent; /* pas de fond */
 }
 
 span.swiper-pagination-bullet:hover {
