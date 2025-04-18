@@ -34,9 +34,9 @@ var swiper = new Swiper(".mySwiper", {
                     traditionIcon.style.display = "none";
                     insoliteIcon.style.display = "none";
                     cherryFlower2Icon.style.display = "none";
-                    root.style.setProperty('--before-height', '2vh');
-                    root.style.setProperty('--after-top', '14.3vh');
-                    root.style.setProperty('--after-height', '41vh');
+                    root.style.setProperty('--before-height', '3vh');
+                    root.style.setProperty('--after-top', '15.3vh');
+                    root.style.setProperty('--after-height', '44vh');
                     break;
                 case 2:
                     cherryFlowerIcon.style.display = "none";
@@ -47,9 +47,9 @@ var swiper = new Swiper(".mySwiper", {
                     traditionIcon.style.display = "none";
                     insoliteIcon.style.display = "none";
                     cherryFlower2Icon.style.display = "none";
-                    root.style.setProperty('--before-height', '9vh');
-                    root.style.setProperty('--after-top', '21.5vh');
-                    root.style.setProperty('--after-height', '34vh');
+                    root.style.setProperty('--before-height', '10vh');
+                    root.style.setProperty('--after-top', '22.1vh');
+                    root.style.setProperty('--after-height', '38vh');
                     break;
                 case 3:
                     cherryFlowerIcon.style.display = "none";
@@ -60,9 +60,9 @@ var swiper = new Swiper(".mySwiper", {
                     traditionIcon.style.display = "none";
                     insoliteIcon.style.display = "none";
                     cherryFlower2Icon.style.display = "none";
-                    root.style.setProperty('--before-height', '15vh');
-                    root.style.setProperty('--after-top', '27.3vh');
-                    root.style.setProperty('--after-height', '28vh');
+                    root.style.setProperty('--before-height', '17vh');
+                    root.style.setProperty('--after-top', '29vh');
+                    root.style.setProperty('--after-height', '31vh');
                     break;
                 case 4:
                     cherryFlowerIcon.style.display = "none";
@@ -73,9 +73,9 @@ var swiper = new Swiper(".mySwiper", {
                     traditionIcon.style.display = "none";
                     insoliteIcon.style.display = "none";
                     cherryFlower2Icon.style.display = "none";
-                    root.style.setProperty('--before-height', '21vh');
-                    root.style.setProperty('--after-top', '33.3vh');
-                    root.style.setProperty('--after-height', '22vh');
+                    root.style.setProperty('--before-height', '23.6vh');
+                    root.style.setProperty('--after-top', '35.8vh');
+                    root.style.setProperty('--after-height', '24vh');
                     break;
                 case 5:
                     cherryFlowerIcon.style.display = "none";
@@ -86,9 +86,9 @@ var swiper = new Swiper(".mySwiper", {
                     traditionIcon.style.display = "block";
                     insoliteIcon.style.display = "none";
                     cherryFlower2Icon.style.display = "none";
-                    root.style.setProperty('--before-height', '27vh');
-                    root.style.setProperty('--after-top', '39.3vh');
-                    root.style.setProperty('--after-height', '16vh');
+                    root.style.setProperty('--before-height', '30vh');
+                    root.style.setProperty('--after-top', '42.2vh');
+                    root.style.setProperty('--after-height', '17vh');
                     break;
                 case 6:
                     cherryFlowerIcon.style.display = "none";
@@ -99,9 +99,9 @@ var swiper = new Swiper(".mySwiper", {
                     traditionIcon.style.display = "none";
                     insoliteIcon.style.display = "block";
                     cherryFlower2Icon.style.display = "none";
-                    root.style.setProperty('--before-height', '33.1vh');
-                    root.style.setProperty('--after-top', '45.3vh');
-                    root.style.setProperty('--after-height', '10vh');
+                    root.style.setProperty('--before-height', '36.5vh');
+                    root.style.setProperty('--after-top', '48.5vh');
+                    root.style.setProperty('--after-height', '11vh');
                     break;
                 case 7:
                     cherryFlowerIcon.style.display = "none";
@@ -112,8 +112,8 @@ var swiper = new Swiper(".mySwiper", {
                     traditionIcon.style.display = "none";
                     insoliteIcon.style.display = "none";
                     cherryFlower2Icon.style.display = "block";
-                    root.style.setProperty('--before-height', '39vh');
-                    root.style.setProperty('--after-top', '51.3vh');
+                    root.style.setProperty('--before-height', '43.4vh');
+                    root.style.setProperty('--after-top', '55.5vh');
                     root.style.setProperty('--after-height', '4vh');
                     break;
                 case 8:
@@ -136,8 +136,8 @@ var swiper = new Swiper(".mySwiper", {
                     insoliteIcon.style.display = "none";
                     cherryFlower2Icon.style.display = "none";
                     root.style.setProperty('--before-height', '0vh');
-                    root.style.setProperty('--after-top', '8.9vh');
-                    root.style.setProperty('--after-height', '47vh');
+                    root.style.setProperty('--after-top', '8.8vh');
+                    root.style.setProperty('--after-height', '51vh');
             }
 
             // On créer un flag (true/false) en vérifiant si la slide actuelle est la dernière en comparant à la taille de la liste des slides (attention la liste commence à 0 et non 1).
