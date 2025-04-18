@@ -35,9 +35,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 140px;
     z-index: 100;
-    background-color: #fff;
   }
 
   .header-container {
@@ -49,13 +47,14 @@ header {
     position: relative;
   }
 
+
+/** CSS du texte sous le logo du header **/
   .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.5rem;
     font-weight: bold;
-    color: black;
+    text-shadow: 5px 5px 5px black;
   }
 
   .logo > img {
@@ -68,6 +67,7 @@ header {
     justify-content: center;
     font-family: 'bebasneueregular';
     font-size: 37px;
+    color: #fff;
   }
 
   .menu {
@@ -82,15 +82,16 @@ header {
   .dropdown > label {
     cursor: pointer;
     font-weight: 500;
-    color: black;
+    color: #fff;
     padding: 0.5rem;
     display: inline-block;
     font-size: 30px;
     font-family: 'bebasneueregular';
+    text-shadow: 5px 5px 5px black;
   }
 
   .dropdown > label:hover {
-    color: #5d8fac;
+    text-decoration: underline;
   }
 
   .dropdown-content {
@@ -504,7 +505,7 @@ div.swiper-slide {
 
 }
 
-/* Espace entre les slides horizontaux */
+/* Espace entre les slides horizontales */
 .myHorizontalSwiper .swiper-slide {
   border: 10px solid white; /* bordure type photo */
   overflow: visible;
@@ -548,9 +549,9 @@ div.swiper-slide {
 }
 
 .horizontal-slider-container {
-  background-color: #2c2c2e;
+  background-color: rgb(44, 41, 41);
   width: 100%;
-  min-height: 100vh;
+  min-height: 115vh;
   padding: 40px 0;
   box-sizing: border-box;
   display: flex;
@@ -647,6 +648,9 @@ span.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   transform: scale(1.6); /* Grossit le bullet */
   opacity: 1;
+  width: 40px;
+  height: 40px;
+  background-color: transparent; /* pas de fond */
 }
 
 span.swiper-pagination-bullet:hover {
