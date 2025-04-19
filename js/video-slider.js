@@ -1,110 +1,109 @@
-/** On créer des objets JS pour chaque vidéo**/
+/**
+ * Création d'un ensemble d'objets JS, un pour chaque container html contenant une vidéo dans le slider,
+ * pour permettre ensuite de les manipuler.
+ **/
 
-const slideHokkaido = document.getElementById('slide-hokkaido');
-const slideTohoku = document.getElementById('slide-tohoku');
-const slideKanto = document.getElementById('slide-kanto');
-const slideKyushu = document.getElementById('slide-kyushu');
-const slideKansai = document.getElementById('slide-kansai');
-const slideShugoku = document.getElementById('slide-shugoku');
-const slideShikoku = document.getElementById('slide-shikoku');
-const slideChubu = document.getElementById('slide-chubu');
-const slideOkinawa = document.getElementById('slide-okinawa');
+let slideHokkaido = document.getElementById('slide-hokkaido');
+let slideTohoku = document.getElementById('slide-tohoku');
+let slideKanto = document.getElementById('slide-kanto');
+let slideKyushu = document.getElementById('slide-kyushu');
+let slideKansai = document.getElementById('slide-kansai');
+let slideShugoku = document.getElementById('slide-shugoku');
+let slideShikoku = document.getElementById('slide-shikoku');
+let slideChubu = document.getElementById('slide-chubu');
+let slideOkinawa = document.getElementById('slide-okinawa');
 
+/**
+ * Création d'un ensemble d'objets JS, un pour chaque vidéo dans le slider,
+ * pour permettre ensuite de les manipuler.
+ **/
 
-/** On créer des objets JS pour chaque slide **/
+let videoHokkaido = document.getElementById('video-hokkaido');
+let videoTohoku = document.getElementById('video-tohoku');
+let videoKanto = document.getElementById('video-kanto');
+let videoKyushu = document.getElementById('video-kyushu');
+let videoKansai = document.getElementById('video-kansai');
+let videoShugoku = document.getElementById('video-shugoku');
+let videoShikoku = document.getElementById('video-shikoku');
+let videoChubu = document.getElementById('video-chubu');
+let videoOkinawa = document.getElementById('video-okinawa');
 
-const videoHokkaido = document.getElementById('video-hokkaido');
-const videoTohoku = document.getElementById('video-tohoku');
-const videoKanto = document.getElementById('video-kanto');
-const videoKyushu = document.getElementById('video-kyushu');
-const videoKansai = document.getElementById('video-kansai');
-const videoShugoku = document.getElementById('video-shugoku');
-const videoShikoku = document.getElementById('video-shikoku');
-const videoChubu = document.getElementById('video-chubu');
-const videoOkinawa = document.getElementById('video-okinawa');
+/**
+ * Pour chaque container, on créer une fonction qui s'exécutera lors du survol de l'élément. Cette fonction démarre la vidéo.
+ **/
 
-/** On gère le lancement de la vidéo d'Hokkaido lors du survol de sa slide. **/
 slideHokkaido.addEventListener('mouseenter', function() {
     videoHokkaido.play();
 });
-/** On gère la mise en pause de la vidéo d'Hokkaido lors de la sortie de sa slide. **/
+
+slideTohoku.addEventListener('mouseenter', function() {
+    videoTohoku.play();
+});
+
+slideKanto.addEventListener('mouseenter', function() {
+    videoKanto.play();
+});
+
+slideKyushu.addEventListener('mouseenter', function() {
+    videoKyushu.play();
+});
+
+slideKansai.addEventListener('mouseenter', function() {
+    videoKansai.play();
+});
+
+slideShugoku.addEventListener('mouseenter', function() {
+    videoShugoku.play();
+});
+
+slideShikoku.addEventListener('mouseenter', function() {
+    videoShikoku.play();
+});
+
+slideChubu.addEventListener('mouseenter', function() {
+    videoChubu.play();
+});
+
+slideOkinawa.addEventListener('mouseenter', function() {
+    videoOkinawa.play();
+});
+
+/**
+ * De la même manière, on créer une fonction qui s'exécuteras lorsque la souris quitte l'élément. Cette fonction arrête la vidéo.
+ **/
+
 slideHokkaido.addEventListener('mouseleave', function() {
     videoHokkaido.pause();
 });
 
-
-/** On gère le lancement de la vidéo de Tohoku lors du survol de sa slide. **/
-slideTohoku.addEventListener('mouseenter', function() {
-    videoTohoku.play();
-});
-/** On gère la mise en pause de la vidéo de Tohoku lors de la sortie de sa slide. **/
 slideTohoku.addEventListener('mouseleave', function() {
     videoTohoku.pause();
 });
 
-
-/** On gère le lancement de la vidéo de Kanto lors du survol de sa slide. **/
-slideKanto.addEventListener('mouseenter', function() {
-    videoKanto.play();
-});
-/** On gère la mise en pause de la vidéo de Kanto lors de la sortie de sa slide. **/
 slideKanto.addEventListener('mouseleave', function() {
     videoKanto.pause();
 });
 
-
-/** On gère le lancement de la vidéo de Kyushu lors du survol de sa slide. **/
-slideKyushu.addEventListener('mouseenter', function() {
-    videoKyushu.play();
-});
-/** On gère la mise en pause de la vidéo de Kyushu lors de la sortie de sa slide. **/
 slideKyushu.addEventListener('mouseleave', function() {
     videoKyushu.pause();
 });
 
-/** On gère le lancement de la vidéo de Kansai lors du survol de sa slide. **/
-slideKansai.addEventListener('mouseenter', function() {
-    videoKansai.play();
-});
-/** On gère la mise en pause de la vidéo de Kansai lors de la sortie de sa slide. **/
 slideKansai.addEventListener('mouseleave', function() {
     videoKansai.pause();
 });
 
-
-/** On gère le lancement de la vidéo de Shugoku lors du survol de sa slide. **/
-slideShugoku.addEventListener('mouseenter', function() {
-    videoShugoku.play();
-});
-/** On gère la mise en pause de la vidéo de Shugoku lors de la sortie de sa slide. **/
 slideShugoku.addEventListener('mouseleave', function() {
     videoShugoku.pause();
 });
 
-/** On gère le lancement de la vidéo de Shikoku lors du survol de sa slide. **/
-slideShikoku.addEventListener('mouseenter', function() {
-    videoShikoku.play();
-});
-/** On gère la mise en pause de la vidéo de Shikoku lors de la sortie de sa slide. **/
 slideShikoku.addEventListener('mouseleave', function() {
     videoShikoku.pause();
 });
 
-
-/** On gère le lancement de la vidéo de Chubu lors du survol de sa slide. **/
-slideChubu.addEventListener('mouseenter', function() {
-    videoChubu.play();
-});
-/** On gère la mise en pause de la vidéo de Chubu lors de la sortie de sa slide. **/
 slideChubu.addEventListener('mouseleave', function() {
     videoChubu.pause();
 });
 
-/** On gère le lancement de la vidéo de Okinawa lors du survol de sa slide. **/
-slideOkinawa.addEventListener('mouseenter', function() {
-    videoOkinawa.play();
-});
-/** On gère la mise en pause de la vidéo de Okinawa lors de la sortie de sa slide. **/
 slideOkinawa.addEventListener('mouseleave', function() {
     videoOkinawa.pause();
 });

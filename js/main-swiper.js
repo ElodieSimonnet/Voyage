@@ -1,4 +1,8 @@
-var swiper = new Swiper(".mySwiper", {
+/**
+ * Initialisation du slide horizontal et ces paramètres.
+ * **/
+
+let swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     effect: "fade",
     fadeEffect: { crossFade: true },
@@ -10,10 +14,16 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    // On défini une action sur l'événement 'slideChange'
+    /**
+     * On créer une méthode qui sera executée à chaque changement de slide de notre slider.
+     * **/
     on: {
         slideChange: function () {
+            /** Création d'un objet JS faisant référence à la racine du document. **/
             const root = document.querySelector(':root');
+            /**
+             * Création d'un ensemble d'objets JS, un pour chaque images dans la pagination, pour permettre ensuite de les manipuler.
+             **/
             const cherryFlowerIcon = document.getElementById('cherryflower-icon');
             const cultureIcon = document.getElementById('culture-icon');
             const gastronomieIcon = document.getElementById('gastronomie-icon');
@@ -23,7 +33,11 @@ var swiper = new Swiper(".mySwiper", {
             const insoliteIcon = document.getElementById('insolite-icon');
             const cherryFlower2Icon = document.getElementById('cherryflower2-icon');
 
-
+            /** Ensuite, détermine quelle est la slide active, et en fonction de celle-ci on effectue certaines actions :
+             * 1 - On masque toutes les icones de la pagination sauf celle qui correspond à notre slide.
+             * 2 - On re-définis la taille que devra avoir le pseudo-élément :before de la pagination.
+             * 3 - On re-définis la position de départ & la taille que devra avoir le pseudo élément :after de la pagination.
+             * **/
             switch (this.activeIndex) {
                 case 1:
                     cherryFlowerIcon.style.display = "none";
@@ -140,17 +154,23 @@ var swiper = new Swiper(".mySwiper", {
                     root.style.setProperty('--after-height', '51vh');
             }
 
-            // On créer un flag (true/false) en vérifiant si la slide actuelle est la dernière en comparant à la taille de la liste des slides (attention la liste commence à 0 et non 1).
-            const isLastSlide = this.activeIndex === this.slides.length - 1;
-            // On créer un objet JS permettant d'interagir avec la pagination dans le DOM.
-            const paginationEl = document.querySelector('.swiper-pagination');
+            /**
+             * On créer un flag (true/false) en vérifiant si la slide actuelle est la dernière en la comparant
+             * à la taille de la liste des slides (attention la liste commence à 0 et non 1).
+             *
+             * On créer également un objet JS permettant d'interagir avec la pagination dans le DOM.
+             **/
+            let isLastSlide = this.activeIndex === this.slides.length - 1;
+            let  paginationEl = document.querySelector('.swiper-pagination');
 
-            // On vérifie si on est sur la dernière slide
+            /**
+             * On vérifie ensuite si l'on est sur la dernière slide :
+             *  1 - Si c'est le cas, on applique le style CSS pour masquer notre pagination.
+             *  2 - Sinon, on affiche la pagination.
+             **/
             if (isLastSlide) {
-                // Si oui, on applique le style CSS pour masquer notre pagination.
                 paginationEl.style.display = 'none';
             } else {
-                // Sinon on affiche la pagination.
                 paginationEl.style.display = 'block';
             }
         }
