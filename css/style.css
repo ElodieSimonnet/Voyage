@@ -21,12 +21,12 @@
 /** CSS Globaux à toute la page **/
 
 html, body {
-  /** position: relative; TO REMOVE IF NOTHING BAD HAPPEN FOR A WHILE.**/
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  margin: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /** CSS du header **/
@@ -38,48 +38,47 @@ header {
     z-index: 100;
   }
 
-  .header-container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     margin: 2rem 40rem;
     position: relative;
-  }
-
+}
 
 /** CSS du texte sous le logo du header **/
-  .logo {
+.logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-weight: bold;
     text-shadow: 5px 5px 5px black;
-  }
+}
 
-  .logo > img {
+.logo > img {
     height: 77px;
-  }
+}
   
-  .logo > h3 {
+.logo > h3 {
     margin: 0;
     display: flex;
     justify-content: center;
     font-family: 'bebasneueregular';
     font-size: 37px;
     color: #fff;
-  }
+}
 
-  .menu {
+.menu {
     display: flex;
     gap: 2rem;
-  }
+}
 
-  .dropdown {
+.dropdown {
     position: relative;
-  }
+}
 
-  .dropdown > label {
+.dropdown > label {
     cursor: pointer;
     font-weight: 500;
     color: #fff;
@@ -88,60 +87,49 @@ header {
     font-size: 30px;
     font-family: 'bebasneueregular';
     text-shadow: 5px 5px 5px black;
-  }
+}
 
-  .dropdown > label:hover {
+.dropdown > label:hover {
     text-decoration: underline;
-  }
+}
 
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
     background-color: white;
     min-width: 150px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
+}
 
-  .dropdown-content a {
+.dropdown-content a {
     display: block;
     padding: 0.7rem 1rem;
     text-decoration: none;
     color: black;
     font-family: 'bebasneueregular';
     font-size: 20px;
-  }
+}
 
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #f5f5f5;
-  }
+}
 
-  /* Checkbox trick to open menu on click */
-  .dropdown input[type="checkbox"] {
+/* Checkbox trick to open menu on click */
+.dropdown input[type="checkbox"] {
     display: none;
-  }
+}
 
-  .dropdown input[type="checkbox"]:checked + label + .dropdown-content {
+.dropdown input[type="checkbox"]:checked + label + .dropdown-content {
     display: block;
-  }
+}
 
-  main {
+main {
     padding-top: 120px;
     padding: 2rem;
-  }
-  
+}
 
-
-
-
-
-
-
-
-
-
-
-    video {
+video {
     position: absolute;
     top: 0;
     left: 0;
@@ -180,8 +168,8 @@ header {
     box-sizing: border-box;
     text-align: center;
     animation: slide-subtitle 20s linear infinite;
-    animation-delay: 1s;             /* ⏸️ Wait 2s before animation starts */
-    animation-fill-mode: both;       /* ✅ Keep initial position before animating */
+    animation-delay: 1s;
+    animation-fill-mode: both;
 }
 
 @keyframes slide-subtitle {
@@ -269,12 +257,10 @@ header {
     text-align: center;
 }
 
-
-
 /** CSS Swiper **/
 
 .swiper {
-    /**Sert à définir l'espacement entre les pagination-bullet**/
+    /** Sert à définir l'espacement entre les pagination-bullet **/
     --swiper-pagination-bullet-vertical-gap: 50px;
     width: 100%;
     height: 100%;
@@ -282,7 +268,6 @@ header {
 }
 
 /** Slides de Swiper **/
-
 div.swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -315,299 +300,298 @@ div.swiper-slide {
     border-style: solid none;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-  }
+}
 
 .btn::before,
 .btn::after {
-  content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 0;
-      height: 0;
-      border: 32px dotted transparent;
-      margin: 0 -45px;
-    }
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border: 32px dotted transparent;
+    margin: 0 -45px;
+}
+
 .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    }
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
 
 .pulse-circle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-      background-color: transparent; /* Couleur du cercle */
-      border: 3px solid #ffffff; /* Bordure blanche */
-      border-radius: 50%;
-      animation: pulse 3s infinite ease-in-out;
-      box-shadow: 0 0 0 rgb(255, 255, 255);
-      position: relative; /* Nécessaire pour décaler avec 'left' */ 
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      overflow: visible; /* Empêche le texte de dépasser */
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent; /* Couleur du cercle */
+    border: 3px solid #ffffff; /* Bordure blanche */
+    border-radius: 50%;
+    animation: pulse 3s infinite ease-in-out;
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    position: relative; /* Nécessaire pour décaler avec 'left' */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: visible; /* Empêche le texte de dépasser */
+}
 
-    #circle-btn-1 {
-      left: 1570px; /* Déplace vers la droite */
-      bottom: 270px;
-    }
+#circle-btn-1 {
+    left: 1570px; /* Déplace vers la droite */
+    bottom: 270px;
+}
 
-    #circle-btn-2 {
-      left: 300px;
-      top: 60px;
-    }
+#circle-btn-2 {
+    left: 300px;
+    top: 60px;
+}
 
-    #circle-btn-3 {
-      left: 300px;
-      bottom: 270px;
-    }
+#circle-btn-3 {
+    left: 300px;
+    bottom: 270px;
+}
 
-    #circle-btn-4 {
-      left: 1570px;
-      top: 60px;
-    }
+#circle-btn-4 {
+    left: 1570px;
+    top: 60px;
+}
 
-    #circle-btn-5 {
-      left: 1570px;
-      bottom: 270px;
-    }
+#circle-btn-5 {
+    left: 1570px;
+    bottom: 270px;
+}
 
-    #circle-btn-6 {
-      left: 300px;
-      top: 60px;
-    }
+#circle-btn-6 {
+    left: 300px;
+    top: 60px;
+}
 
-    #circle-btn-7 {
-      left: 300px;
-      bottom: 270px;
-    }
+#circle-btn-7 {
+    left: 300px;
+    bottom: 270px;
+}
 
-    #circle-btn-8 {
-      left: 1570px;
-      top: 60px;
-    }
+#circle-btn-8 {
+    left: 1570px;
+    top: 60px;
+}
 
-    #circle-btn-9 {
-      left: 1570px;
-      bottom: 270px;
-    }
+#circle-btn-9 {
+    left: 1570px;
+    bottom: 270px;
+}
 
-    #circle-btn-10 {
-      left: 300px;
-      top: 60px;
-    }
+#circle-btn-10 {
+    left: 300px;
+    top: 60px;
+}
 
-    #circle-btn-11 {
-      left: 300px;
-      bottom: 270px;
-    }
+#circle-btn-11 {
+    left: 300px;
+    bottom: 270px;
+}
 
-    #circle-btn-12 {
-      left: 1570px;
-      top: 60px;
-    }
+#circle-btn-12 {
+    left: 1570px;
+    top: 60px;
+}
 
 .circle-deco {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border: 1px dotted #ffffff;
-      border-radius: 50%;
-      opacity: 1;
-      z-index: 0;
-      transition: transform 0.4s ease;
-    }
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px dotted #ffffff;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 0;
+    transition: transform 0.4s ease;
+}
 
 .inner-circle {
-  width: 5px;
-  height: 5px;
-  background-color: #ffffff; /* Couleur du cercle */
-  border: 2px solid #ffffff; /* Bordure blanche */
-  border-radius: 50%;
-  box-shadow: 0 0 0 rgb(255, 255, 255);
-  transition: transform 0.3s ease, font-size 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff; /* Couleur du cercle */
+    border: 2px solid #ffffff; /* Bordure blanche */
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgb(255, 255, 255);
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .circle-text {
-  opacity: 0;
-  color: black;
-  font-size: 0;
-  transition: opacity 0.3s ease, font-size 0.3s ease;
-  pointer-events: none;
-  white-space: nowrap;
+    opacity: 0;
+    color: black;
+    font-size: 0;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
 }
 
- /* Clic pour agrandir les cercles */
- .pulse-circle.clicked .inner-circle {
-  transform: scale(32);
+/* Clic pour agrandir les cercles */
+.pulse-circle.clicked .inner-circle {
+    transform: scale(32);
 }
 
 .pulse-circle.clicked .circle-deco {
-  transform: scale(6); /* Ajuste pour qu'il entoure proprement l'autre cercle */
-  opacity: 0.6;
+    transform: scale(6); /* Ajuste pour qu'il entoure proprement l'autre cercle */
+    opacity: 0.6;
 }
 
 .pulse-circle.clicked .circle-text {
-  opacity: 1;
-  font-size: 0.8px;
-  font-family: 'hiromisake';
+    opacity: 1;
+    font-size: 0.8px;
+    font-family: 'hiromisake';
 }
 
 @keyframes pulse {
-      0% {
+    0% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgb(255, 255, 255);
-      }
-      70% {
+    }
+    70% {
         transform: scale(1);
         box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-      }
-      100% {
+    }
+    100% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
-      }
     }
+}
 
 /* Flèche gauche */
 .btn::before {
-  left: -20px;
-  border-right-color: #fff;
+    left: -20px;
+    border-right-color: #fff;
 }
 
 /* Flèche droite */
 .btn::after {
-  right: -20px;
-  border-left-color: #fff;
+    right: -20px;
+    border-left-color: #fff;
 }
 
 /* Titres visibles */
 .slider-title, .slider-subtitle {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .slider-title {
-  font-family: 'hiromisake';
-  font-size: 50px;
+    font-family: 'hiromisake';
+    font-size: 50px;
 }
 
 .slider-subtitle {
-  font-family: 'bebasneueregular';
-  font-size: 30px;
-
+    font-family: 'bebasneueregular';
+    font-size: 30px;
 }
 
 /* Espace entre les slides horizontales */
 .myHorizontalSwiper .swiper-slide {
-  border: 10px solid white; /* bordure type photo */
-  overflow: visible;
-  background-color: transparent;
-  transition: transform 0.3s ease;
-  width: auto;
-  max-width: 265px;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    border: 10px solid white; /* bordure type photo */
+    overflow: visible;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    width: auto;
+    max-width: 265px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Cadre autour de la vidéo */
 .slide-frame {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 /* Vidéo avec filtre sombre par défaut */
 .slide-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(60%);
-  transition: filter 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: filter 0.3s ease;
 }
 
 /* Effet au survol : joue la vidéo + retire le filtre */
 .slide-frame:hover .slide-video {
-  filter: brightness(100%);
+    filter: brightness(100%);
 }
 
 .myHorizontalSwiper {
-  width: 100%;
-  max-width: 1200px; /* si tu veux un conteneur centré et contrôlé */
-  padding: 20px 0;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    max-width: 1200px; /* si tu veux un conteneur centré et contrôlé */
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
 }
 
 .horizontal-slider-container {
-  background-color: rgb(44, 41, 41);
-  width: 100%;
-  min-height: 115vh;
-  padding: 40px 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  top: 60px;
+    background-color: rgb(44, 41, 41);
+    width: 100%;
+    min-height: 115vh;
+    padding: 40px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 60px;
 }
 
 .horizontal-button-prev::after {
-  content: '‹'; /* flèche gauche */
+    content: '‹'; /* flèche gauche */
 }
 
 .horizontal-button-next::after {
-  content: '›'; /* flèche droite */
+    content: '›'; /* flèche droite */
 }
 
 .horizontal-button-prev::after,
 .horizontal-button-next::after {
-  color: white;         /* couleur de la flèche */
-  font-size: 100px; 
-  line-height: 1;     /* taille de la flèche */
+    color: white;         /* couleur de la flèche */
+    font-size: 100px;
+    line-height: 1;     /* taille de la flèche */
 }
 
 .horizontal-button-prev,
 .horizontal-button-next {
-  position: absolute;
-  top: 50%; /* centre verticalement */
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  pointer-events: auto;
+    position: absolute;
+    top: 50%; /* centre verticalement */
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
 } 
 
 
 /* Flèche gauche */
 .horizontal-button-prev {
-  left: 0px; /* éloigne-la du slider */
+    left: 0px; /* éloigne-la du slider */
 }
 
 /* Flèche droite */
 .horizontal-button-next {
-  right: 0px;
+    right: 0px;
 }
 
 
 /** Swiper Navigation **/
-
 .swiper-pagination {
     width: 100px;
     height: 100px;
@@ -623,7 +607,7 @@ div.swiper-slide {
     width: 2px;
     height: var(--before-height);
     background-color: #fff; /* Couleur du trait */
-  }
+}
 
 .swiper-pagination:after {
     content: '';
@@ -655,19 +639,13 @@ span.swiper-pagination-bullet {
 
 span.swiper-pagination-bullet:hover {
     transform: scale(1.8); /* Zoom au survol */
-  }
+}
 
 /** CSS spécifiques pour la gestion des vidéos dans le slider horizontal. **/
 
 .myHorizontalSwiper > .swiper-wrapper > .swiper-slide {
     pointer-events: visible !important;
 }
-
-
-
-
-
-
 
 #cherryflower-icon {
     position: absolute;

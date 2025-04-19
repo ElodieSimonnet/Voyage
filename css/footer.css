@@ -1,3 +1,5 @@
+/** CSS Relatifs à la font **/
+
 @font-face {
     font-family: 'hiromisake';
     src: url('fonts/HIROMISAKE.ttf') format('truetype');
@@ -10,15 +12,11 @@
     src: url('fonts/BebasNeue-Regular.ttf');
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
-
 footer {
     width: 100%;
 }
 
+/** CSS de la première partie du footer (image & titre).**/
 .footer-top {
     position: relative;
     height: 82vh;
@@ -53,7 +51,7 @@ footer {
     font-size: 50px;
     font-family: 'hiromisake';
   }
-  
+
 .footer-top-content p {
     font-size: 20px;
     max-width: 1000px;
@@ -62,6 +60,8 @@ footer {
     padding-top: 20px;
   }
 
+/** CSS relatif à la deuxième partie du footer**/
+
 .footer-bottom {
     background-color: #000;
     height: 18vh;
@@ -69,54 +69,54 @@ footer {
     display: flex;
   }
 
-  .footer-column {
+.footer-column {
     min-width: 200px;
     margin: 0;
     width: 30%;
-  }
+}
 
-  .footer-column:first-child {
-      width: 10%;
-      position: relative;
-      left: 0;
-      transform: translateX(0%);
-  }
-  
-  .footer-column h3 {
+.footer-column:first-child {
+    width: 10%;
+    position: relative;
+    left: 0;
+    transform: translateX(0%);
+}
+
+.footer-column h3 {
     font-size: 20px;
     font-family: 'hiromisake';
     letter-spacing: 1px;
     margin: 2vh 0 2vh 0;
     color: white;
-  }
-  
-  .footer-column ul {
+}
+
+.footer-column ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .footer-column li {
+}
+
+.footer-column li {
     margin-bottom: 15px;
     font-family: 'bebasneueregular';
     font-size: 18px;
     margin-bottom: 10px;
-  }
-  
-  .footer-column a {
+}
+
+.footer-column a {
     color: white;
     text-decoration: none;
-  }
-  
-  .footer-column.logo img {
+}
+
+.footer-column.logo img {
     max-width: 250px;
     margin-top: 30px;
-  }
+}
 
 /* Conteneur pour aligner horizontalement */
 .social-buttons ul {
     display: flex;
     flex-direction: row;
-    gap: 0.8rem; /* espace entre les boutons */
+    gap: 0.8rem;
     padding: 0;
     margin: 7vh 0 0 0;
     list-style: none;
@@ -148,8 +148,7 @@ section a {
 .text {
     font-size: 20px;
     font-weight: 800;
-}   
- 
+}
 
 /** fait l'effet 3D sur le petit côté des rectangles **/
 .footer-btn::before {
